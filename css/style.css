@@ -1,0 +1,70 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+}
+
+div.lista{
+  min-height: 80%;
+  width: 400px;
+  padding: 25px;
+  margin: 0 auto;
+  border: 2px solid black;
+  background: rgba(100,100,100,0.3);
+}
+
+div.lista h1{
+  font-size: 26px;
+  color: rgb(120,60,20);
+  padding: 5px 0 20px 0;
+}
+
+div.lista ul{
+  padding: 5px 20px 60px 20px;
+}
+
+ul li{
+  list-style-type: none;
+  border-bottom: 1px solid black;
+  align-items: left;
+  font-size: 20px;
+}
+
+ul li:hover{
+  color: white;
+}
+
+li span{
+  position: absolute;
+  right: 360px;
+  cursor: pointer;
+  font-size: 22px;
+  color: rgb(120,0,0);
+}
+
+li span:hover{
+  font-size: 28px;
+  color: rgb(120,10,10);
+}
+
+input{
+  padding: 2px;
+}
+
+button{
+  font-size: 15px;
+  color: #333;
+  background: rgba(120,60,20,0.6);
+  cursor: pointer;
+  color: white;
+  padding: 2px;
+}
+
+button:hover{
+  padding: 4px 2px;
+  backgroung: rgb(120,60,20)
+}
