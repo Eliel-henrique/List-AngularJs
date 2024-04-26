@@ -6,7 +6,7 @@ app.controller("myCtrl", function($scope){
       $scope.produtos.push($scope.item);
     } else{
       $scope.errortext = "Esse item já esté em sua lista";
-      console.log($scope.errortext);
+      alert($scope.errortext);
     }
   }
   $scope.removeItem = function(x){
