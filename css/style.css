@@ -6,6 +6,10 @@
 
 html,body{
   height: 100%;
+  background: radial-gradient(circle, #ff7d10, #0a0310);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 div.lista{
@@ -14,12 +18,12 @@ div.lista{
   padding: 25px;
   margin: 0 auto;
   border: 2px solid black;
-  background: rgba(100,100,100,0.3);
+  background: rgba(100,00,130, 0.6);
 }
 
 div.lista h1{
   font-size: 26px;
-  color: rgb(120,60,20);
+  color: #ff7d10;
   padding: 5px 0 20px 0;
 }
 
@@ -32,6 +36,8 @@ ul li{
   border-bottom: 1px solid black;
   align-items: left;
   font-size: 20px;
+  position: relative;
+  cursor: pointer;
 }
 
 ul li:hover{
@@ -39,16 +45,18 @@ ul li:hover{
 }
 
 li span{
-  position: absolute;
-  right: 360px;
+ align-items: end;
   cursor: pointer;
   font-size: 22px;
-  color: rgb(120,0,0);
+  color: black;
+  position: absolute;
+  top: 0;
+  right: 10px;
 }
 
 li span:hover{
   font-size: 28px;
-  color: rgb(120,10,10);
+  color: #ffb266;
 }
 
 input{
@@ -58,7 +66,7 @@ input{
 button{
   font-size: 15px;
   color: #333;
-  background: rgba(120,60,20,0.6);
+  background: #ff7d10;
   cursor: pointer;
   color: white;
   padding: 2px;
@@ -66,5 +74,5 @@ button{
 
 button:hover{
   padding: 4px 2px;
-  background: rgb(120,60,20)
+  background: #ff7d33;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
         <span ng-click="removeItem($index)">&times;</span>
       </li>
     </ul>
-    <input placeholder="Digite seu item!!!" ng-model="item">
+    <input placeholder="Digite seu item!!!" ng-model="item" ng-keyup="checkInput()">
     <button ng-click="addItem()">Adicionar no carrinho!</button>
   </div>
   
