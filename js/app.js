@@ -1,12 +1,12 @@
 
 var app = angular.module("myShoppingList", []);
 
-app.controller("myCtrl", function($scope) {
+app.controller("myCtrl", function($scope, $timeout) {
   $scope.produtos = ["Leite", "Pão", "Queijo"];
   
   $scope.addItem = function() {
     if(!$scope.item){
-      $scope.errortext = "Por favor, insira um item antes de adicionar à lista.";
+      $scope.errortext = "Por favor, insira o nome do item antes de adicioná-lo à lista.";
       alert($scope.errortext)
       return;
     }
@@ -21,9 +21,26 @@ app.controller("myCtrl", function($scope) {
   
   $scope.removeItem = function(x) {
     $scope.produtos.splice(x, 1);
-    // Adicionando o alerta aqui
-    alert('Item removido com sucesso!');
   };
 
   
 });
+
+$(function(){
+  $('#sortable').sortable({
+    placeholder:"ui-state-highLight"
+  });
+
+  $('button').click(function(){
+    $("ul").effect("bounce","2000")
+  })
+
+  $('span').click(function(){
+    $("ul").effect("bounce","2000")
+  })
+})
+
+$(document).ready(function(){
+  $("div").effect("slide","slow")
+})
+

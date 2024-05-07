@@ -4,23 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
   <title>Document</title>
 </head>
 <body>
 
   <div class="lista" ng-app="myShoppingList" ng-controller="myCtrl">
     <h1>Minha lista</h1>
-    <ul>
+    <ul  id="sortable">
       <li ng-repeat="x in produtos">
         {{x}}
         <span ng-click="removeItem($index)">&times;</span>
       </li>
     </ul>
-    <input placeholder="Digite seu item!!!" ng-model="item" ng-keyup="checkInput()">
-    <button ng-click="addItem()">Adicionar no carrinho!</button>
+    <div class="botoes">
+      <input placeholder="Digite seu item!!!" ng-model="item" ng-keyup="checkInput()">
+      <button ng-click="addItem()">Adicionar no carrinho!</button>
+    </div>
   </div>
   
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
